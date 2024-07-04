@@ -2,10 +2,12 @@ import streamlit as st
 from ibm_watson import TextToSpeechV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 import io
+import os
+from dotenv import load_dotenv
 
 # IBM Watson Text to Speech credentials
-api_key = 'BpQ0PAMKod6iceIcZLPafCanTJVkGojOrzM3cF6IDQht'
-url = 'https://api.eu-gb.text-to-speech.watson.cloud.ibm.com/instances/c1e79881-b442-44f9-bbfe-71820e821a80'
+api_key = os.getenv('IBM_API_KEY')
+url = os.getenv('IBM_URL')
 
 
 # Set up the Text to Speech service
