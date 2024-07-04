@@ -21,8 +21,8 @@ text_to_speech.set_service_url(url)
 def text_to_speech_conversion(text):
     response = text_to_speech.synthesize(
         text,
-        # voice='en-US_AllisonV3Voice',
-        voice='en-US_MichaelV3Voice',
+        voice='en-US_AllisonV3Voice',
+        #voice='en-US_MichaelV3Voice',
         accept='audio/wav'
     ).get_result()
     audio = response.content
