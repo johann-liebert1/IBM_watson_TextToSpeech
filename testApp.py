@@ -5,6 +5,8 @@ import io
 import os
 from dotenv import load_dotenv
 
+load_dotenv()
+
 # IBM Watson Text to Speech credentials
 api_key = os.getenv('IBM_API_KEY')
 url = os.getenv('IBM_URL')
