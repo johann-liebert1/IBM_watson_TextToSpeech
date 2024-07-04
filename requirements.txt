@@ -1,3 +1,4 @@
 streamlit
 ibm-watson
 pydub
+python-dotenv
